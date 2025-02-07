@@ -15,3 +15,11 @@ This function initializes the shortest path calculation by:
 - Setting all distances to infinity except the starting node (0 distance)
 - Initializing paths
 - Printing the initial state
+
+## Features
+
+- Dictionary creation, modification, and deletion
+- Iterating over dictionary items
+- Graph representation using adjacency lists
+- Shortest path initialization with distance and path tracking
+- Output of initial unvisited nodes, distances, and paths

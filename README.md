@@ -23,3 +23,7 @@ This function initializes the shortest path calculation by:
 - Graph representation using adjacency lists
 - Shortest path initialization with distance and path tracking
 - Output of initial unvisited nodes, distances, and paths
+
+## Applications
+- Network routing algorithm
+- Pathfinding in maps

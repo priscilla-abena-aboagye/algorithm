@@ -59,3 +59,9 @@ for name in names_of_friends:
 
 for index, name in enumerate(names_of_friends):
     print(f"Index Number: {index} Name: {name}")
+
+# enumerate also takes start
+# when you don't bring it it default is 0
+
+for index, name in enumerate(names_of_friends, 4):
+    print(f"Index Number: {index} Name: {name}")

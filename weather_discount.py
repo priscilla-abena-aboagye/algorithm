@@ -50,3 +50,12 @@ def apply_discount(price, discount):
 
     return final_price
 print(apply_discount(50, 20))
+
+# An example of enumerate 
+names_of_friends = ["Ama", "Ceydes", "Baaba", "Veve", "Azuu", "Florain"]
+
+for name in names_of_friends:
+    print(name)
+
+for index, name in enumerate(names_of_friends):
+    print(f"Index Number: {index} Name: {name}")

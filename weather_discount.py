@@ -65,3 +65,14 @@ for index, name in enumerate(names_of_friends):
 
 for index, name in enumerate(names_of_friends, 4):
     print(f"Index Number: {index} Name: {name}")
+
+# An example of zip
+# the zip returns a tuple
+items = ["bottle", "socks", "laptop", "inhaler", "bag", "piano"]
+owners = ["Priscilla", "Frank", "Ben", "Grace", "Godwin", "Belinder"]
+
+print(list(zip(items, owners)))
+
+for item, owner in zip(items, owners):
+    print(f"Items: {items}")
+    print(f"Owners: {owners}")

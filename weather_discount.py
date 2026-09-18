@@ -1,3 +1,4 @@
+'''
 distance_mi = 6
 is_raining = True
 has_bike = False
@@ -76,3 +77,23 @@ print(list(zip(items, owners)))
 for item, owner in zip(items, owners):
     print(f"Items: {items}")
     print(f"Owners: {owners}")
+
+'''
+# list comprehension
+
+for num in range(11):
+    if num % 2 == 0:
+        print(num)
+
+even_numbers = [num for num in range(11) if num % 2 ==0]
+print(even_numbers)
+
+for num in range(11):
+    if num % 2 == 0:
+        print(f"Even: {num}")
+    else:
+        print(f"Odd: {num}")
+
+numbers = ["even" if num % 2 == 0 else "Odd" for num in range(11)]
+print(numbers)
+

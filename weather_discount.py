@@ -78,7 +78,7 @@ for item, owner in zip(items, owners):
     print(f"Items: {items}")
     print(f"Owners: {owners}")
 
-'''
+
 # list comprehension
 
 for num in range(11):
@@ -96,4 +96,39 @@ for num in range(11):
 
 numbers = ["even" if num % 2 == 0 else "Odd" for num in range(11)]
 print(numbers)
+'''
+# Using the filter function
+# the filter function takes two arguement
+# filter(condition, collection)
 
+list_of_words = ["mee", "she", "dog","laptop", "bottle","book", "band", "brush"]
+def long_words(words):
+    return len(words) > 4
+
+print(long_words(list_of_words))
+
+greater_than_4_words = list(filter(long_words, list_of_words))
+print(greater_than_4_words)
+
+# map function 
+# works like filter but it reltaes two things together 
+
+def uppercase_words(words):
+    return words.upper()
+
+mapping_words = list(map(uppercase_words, list_of_words))
+print(mapping_words)
+
+# sum function 
+# Used to get the sum of an iterable
+# you can also specify where it should start (positional arguement)
+
+numbers = [2, 5, 7, 10, 11]
+total = sum(numbers)
+print(total)
+
+total2 = sum(numbers, 3) # positional arguement
+print(total2)
+
+total3 = sum(numbers, start=10)
+print(total3)
